@@ -286,23 +286,6 @@
   - type: SpawnOnDespawn
     prototype: Marlen
 
-- type: entity
-  id: SpawnPodNTRCigs
-  categories: [ HideSpawnMenu ]
-  name: SpawnPodNTRCigs
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: VendingMachineCigsDeluxe
-
-- type: entity
-  id: SpawnPodNTRSoap
-  categories: [ HideSpawnMenu ]
-  name: SpawnPodNTRSoap
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: SoapCentcomm
 
 - type: entity
   id: SpawnPodCargoBingle

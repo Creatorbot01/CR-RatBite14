@@ -87,36 +87,6 @@
         soundStateActivate:
           path: /Audio/_Goobstation/Misc/umbrella.ogg
 
-# cigvend
-
-- type: entity
-  parent: VendingMachineCigs
-  id: VendingMachineCigsDeluxe
-  name: ShadyCigs Ultra Premium Pro DLC Deluxe
-  description: If you dont have one of these in your home, you cant call yourself a smoker.
-  components:
-  - type: Sprite
-    noRot: true
-    sprite: _Goobstation/Structures/Machines/cigvend.rsi
-    layers:
-    - state: "off"
-      map: [ "enum.VendingMachineVisualLayers.Base" ]
-    - state: "off"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
-      shader: unshaded
-    - state: panel
-      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
-  - type: VendingMachine
-    pack: CigaretteMachineInventoryDeluxe
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    ejectState: eject-unshaded
-    denyState: deny-unshaded
-  - type: DatasetVocalizer
-    dataset: CigaretteMachineAdsDLC
 
 # nt soaps
 
@@ -137,18 +107,7 @@
       paralyzeTime: 5.0 # omegaslop
       launchForwardsMultiplier: 3.0
   - type: CleansForensics
-  - type: FloorCleaner
-    cleanDelay: 3 # goida soap
 
-- type: entity
-  parent: SoapGold
-  id: SoapCentcomm
-  description: They clearly should stop with the green theme on everything man. Smells like lube.
-  name: centcomm soap
-  components:
-  - type: Sprite
-    sprite: _Goobstation/Objects/Fun/soap.rsi
-    state: soap_cc
 
 - type: entity
   id: WaterCoolerGold

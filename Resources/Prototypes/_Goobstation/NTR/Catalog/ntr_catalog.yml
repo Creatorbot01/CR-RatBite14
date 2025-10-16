@@ -358,39 +358,6 @@
   resetRestockOnPurchase: true
   restockAfterPurchase: 1800 #30min
 
-- type: listing
-  id: NTRExecutiveCigsDeluxe
-  name: Executive cig vendor
-  description: For those who know that lung cancer is non-existent, Nanotrasen made this, a vendor full of ciggaretes and expensive flippos for you to smoke.
-  productEntity: SpawnPodNTRCigs
-  icon:
-    sprite: _Goobstation/Structures/Machines/cigvend.rsi
-    state: icon
-  cost:
-    NTLoyaltyPoint: 15
-  categories:
-  - NTRpersonal
-  restockTime: 0
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-
-- type: listing
-  id: NTRExecutiveSoap
-  name: centcomm soap
-  description: An expensive soap made with our finest... who am i kidding its just a soap covered in lube with a print.
-  productEntity: SpawnPodNTRSoap
-  icon:
-    sprite: _Goobstation/Objects/Fun/soap.rsi
-    state: soap_cc
-  cost:
-    NTLoyaltyPoint: 10
-  categories:
-  - NTRpersonal
-  restockTime: 0
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 2
 
 # Machine boards
 
