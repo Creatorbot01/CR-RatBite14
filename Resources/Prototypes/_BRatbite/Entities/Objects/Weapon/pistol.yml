@@ -5,9 +5,9 @@
   description: Mass-produced .38 Magnum, 6-shot service revolver for security officers. Reliable, simple, and makes you feel lucky while holding it.
   components:
   - type: Sprite
-    sprite: _BRatBites\Objects\Weapon\Pistol\lucky.rsi
+    sprite: _BRatBites/Objects/Weapon/Pistol/lucky.rsi
   - type: Clothing
-    sprite: _BRatBites\Objects\Weapon\Pistol\lucky.rsi
+    sprite: _BRatBites/Objects/Weapon/Pistol/lucky.rsi
   - type: RevolverAmmoProvider
     whitelist:
       tags:
