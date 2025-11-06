@@ -83,8 +83,8 @@
     - type: StaticPrice
       price: 350
     - type: Battery
-      maxCharge: 200
-      startingCharge: 200
+      maxCharge: 90
+      startingCharge: 90
     - type: RechargeableBlocking
       dischargedRechargeRate: 10
       chargedRechargeRate: 0
