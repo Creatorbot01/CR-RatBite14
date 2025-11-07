@@ -1308,7 +1308,7 @@
   description: uplink-cqc-desc
   productEntity: CQCManual
   cost:
-    Telecrystal: 60
+    Telecrystal: 100 #Ratbite - chef cqc balance
   categories:
   - UplinkJob
   conditions:
