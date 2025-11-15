@@ -1,0 +1,121 @@
+- type: entity
+  name: EP-12 Energy Pistol
+  parent: [ BaseWeaponCustomCellSmall, BaseSecurityContraband ]
+  id: WeaponEnergyCellPistol
+  description: An energy pistol that are meant to be an alternative to MK58. One of Nanotrasen’s initiative to cut steel waste without sacrificing stopping power.
+  components:
+  - type: AmmoCounter
+  - type: Item
+    heldPrefix: lethal
+  - type: Sprite
+    sprite: _BRatBites/Objects/Weapon/Battery/ep-12energypistol.rsi
+    layers:
+    - state: base
+    - state: icon
+      visible: false
+    - state: mag-0
+      visible: false
+      shader: unshaded
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: true
+    zeroNoAmmo: true
+  - type: Clothing
+    sprite: _BRatBites/Objects/Weapon/Battery/ep-12energypistol.rsi
+    slots:
+    - Belt
+    - suitStorage
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    soundEmpty:
+      path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: EnergyMagPistolLethal
+        insertSound: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+        whitelist:
+          tags:
+            - EnergyPistolMagAmmo
+
+- type: entity
+  name: PEW-1 Energy Pistol
+  parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
+  id: WeaponLockedEnergyPistol
+  description: Pesonalize Energy Weapon for paranoid security personal. Come with access lock on the gun trigger and capable of firing both disabler and lethal bolt with internal battery.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Battery/multiphase_energygun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mode-disabler
+      shader: unshaded
+      map: [ "Firemode" ]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - suitStorage
+    - belt
+    sprite: _DV/Objects/Weapons/Guns/Battery/multiphase_energygun.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_DV/Weapons/Guns/Gunshots/laser.ogg
+    soundEmpty:
+      path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
+  - type: Battery
+    maxCharge: 850
+    startingCharge: 850
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletEnergyPistolLethalWeak
+    fireCost: 50
+  - type: AmmoSelector
+    prototypes:
+    - BulletEnergyPistolLethalWeak
+    - BulletEnergyPistolDisabler
+  - type: UserInterface
+    interfaces:
+      enum.AmmoSelectorUiKey.Key:
+        type: AmmoSelectorMenuBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: true
+    key: enum.AmmoSelectorUiKey.Key
+  - type: ItemToggle
+    activated: true
+    onActivate: false
+    onUse: false
+    wieldToggle: false
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: ItemToggleColor
+  - type: Appearance
+  - type: ToggleableVisuals
+    spriteLayer: Firemode
+    inhandVisuals:
+      left:
+      - state: mode-inhand-left
+        shader: unshaded
+      right:
+      - state: mode-inhand-right
+        shader: unshaded
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: StaticPrice
+    price: 750
+  - type: Multishot
+  - type: FiringPin
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [ [ "Security" ] ]
