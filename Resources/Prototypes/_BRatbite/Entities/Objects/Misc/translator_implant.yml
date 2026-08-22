@@ -5,3 +5,11 @@
   components:
   - type: Implanter
     implant: WawaTranslatorImplant
+
+- type: entity
+  id: GaryTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  suffix: Gary
+  components:
+  - type: Implanter
+    implant: GaryTranslatorImplant

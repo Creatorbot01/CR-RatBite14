@@ -14,3 +14,20 @@
     requires:
     - TauCetiBasic
     - Wawa
+
+- type: entity
+  id: GaryTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: Gary translator
+  description: Translates speech between Gary and Basic. Gaaaaarrryyyy!!
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Gary
+    understood:
+    - Gary
+    - TauCetiBasic
+    requires:
+    - TauCetiBasic
+    - Gary

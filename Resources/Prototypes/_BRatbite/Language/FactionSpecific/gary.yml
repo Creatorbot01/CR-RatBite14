@@ -1,0 +1,14 @@
+# Used by gary.
+- type: language
+  id: Gary # Gary
+  speech:
+    color: "#03c6fc"
+  obfuscation:
+    !type:ReplacementObfuscation
+    replacement:
+    - Gary
+    - GARY
+    - gary
+    - gaarry
+    - garyyyy
+    - gaaaarrrryyyy

@@ -10,3 +10,16 @@
     - Wawa
     spoken:
     - Wawa
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: GaryTranslatorImplant
+  name: Gary translator implant
+  description: Provides you the ability to speak with Gary.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - Gary
+    spoken:
+    - Gary
