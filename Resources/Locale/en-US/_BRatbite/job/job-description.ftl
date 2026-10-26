@@ -12,3 +12,7 @@ job-description-cargo-insurance = Protect the cargo department, its assets, its 
 job-description-redsight-overseer = Ensure security's compliance with spacelaw, act as the judge in legal disputes
 
 job-description-tram-driver = you drive the tram. that it. that your entire purposes.
+
+job-description-hecu-operator = Follow Team Leader and Central Command order. Support your team and other on this misssion.
+job-description-hecu-medic-operator = Follow Team Leader and Central Command order. Ensure no one of your team member died on this mission.
+job-description-hecu-teamlead = Follow Central Command order. Complete the mission assigned along side with your team member and lead them to success.

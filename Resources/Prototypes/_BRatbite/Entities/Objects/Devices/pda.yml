@@ -137,3 +137,30 @@
     accentVColor: "#ffc500"
   - type: Icon
     state: pda-tramdriver
+
+- type: entity
+  parent: CentcomPDA
+  id: HECUOperatorPDA
+  name: HECU operator PDA
+  description: A PDA for HECU operators.
+  components:
+  - type: Pda
+    id: HECUOperatorIDCard
+
+- type: entity
+  parent: CentcomPDA
+  id: HECUMedicPDA
+  name: HECU medic PDA
+  description: A PDA for HECU medics.
+  components:
+  - type: Pda
+    id: HECUMedicIDCard
+
+- type: entity
+  parent: CentcomPDA
+  id: HECUTeamLeadPDA
+  name: HECU team lead PDA
+  description: A PDA for HECU team leads.
+  components:
+  - type: Pda
+    id: HECUTeamLeadIDCard

@@ -14,6 +14,15 @@
       "name": "idintern"
     },
     {
+      "name": "idteamlead"
+    },
+    {
+      "name": "idmedicoperator"
+    },
+    {
+      "name": "idoperator"
+    },
+    {
       "name": "default-inhand-left",
       "directions": 4
     },

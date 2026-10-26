@@ -27,3 +27,12 @@
 
 - type: playTimeTracker
   id: JobTramDriver
+
+- type: playTimeTracker
+  id: JobOperator
+
+- type: playTimeTracker
+  id: JobMedicOperator
+
+- type: playTimeTracker
+  id: JobTeamLead

@@ -27,6 +27,15 @@
      },
      {
       "name": "TramDriver"
-     }
+     },
+     {
+        "name" : "TeamLead"
+     },
+     {
+        "name" : "medicoperator"
+     },
+    {
+        "name" : "Operator"
+    }
     ]
 }

@@ -18,3 +18,24 @@ selectable-set-rso-weaponkit-smartgun-name = Abielle Smart-SMG Set
 selectable-set-rso-weaponkit-smartgun-desc =
     you will never miss with this weapon.
     Include : Abielle Smart-SMG and 2 smart magazine.
+
+# HECU Weapon Selector
+
+selectable-set-hecu-ballistic-name = HECU Ballistic Set
+selectable-set-hecu-ballistic-desc =
+    Set of ballistic weapon. The old fashion way.
+    Include : Lecter and mk58.
+    with 2 magazine and 1 box for .20 and .35
+
+selectable-set-hecu-energy-name = HECU Energy Set
+selectable-set-hecu-energy-desc =
+    Set of energy weapon. The future is now.
+    Include : ER-5 Torrent and ep-12.
+    with 2 cell magazine and compact portable recharger
+
+selectable-set-hecu-riot-name = HECU riot Set
+selectable-set-hecu-riot-desc =
+    Set of riot gear. for controlling the crowd.
+    Include : GL-06 riot grenade launcher and sawn-off shotgun.
+    with 3 40mm beanbag 40mm flash grenade, 2 gas tear grenade,
+    1 pellet and 1 beanbag shotgun shell box. with riot shield

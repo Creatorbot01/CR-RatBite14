@@ -1,0 +1,123 @@
+- type: job
+  id: operatorT1
+  name: job-name-hecu-operator
+  description: job-description-hecu-operator
+  playTimeTracker: JobOperator
+  setPreference: false
+  startingGear: NTInternGear
+  icon: "JobIconOperator"
+  supervisors: job-supervisors-centcom job-supervisors-hecu-teamLead
+  canBeAntag: false
+  accessGroups:
+  - AAWithoutCommandRoom
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ] # CC gets bluespace
+
+- type: job
+  id: MedicOperatorT1
+  name: job-name-hecu-medic-operator
+  description: job-description-hecu-medic-operator
+  playTimeTracker: JobMedicOperator
+  setPreference: false
+  startingGear: NTInternGear
+  icon: "JobIconMedicOperator"
+  supervisors: job-supervisors-centcom job-supervisors-hecu-teamLead
+  canBeAntag: false
+  accessGroups:
+  - AAWithoutCommandRoom
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ] # CC gets bluespace
+  - !type:AddComponentSpecial
+    components:
+      - type: SurgerySpeedModifier
+        speedModifier: 1.3
+
+- type: job
+  id: teamLeadT1
+  name: job-name-hecu-teamlead
+  description: job-description-hecu-teamlead
+  playTimeTracker: JobTeamLead
+  setPreference: false
+  startingGear: HECUTeamLeadOperatorGear
+  icon: "JobIconTeamLead"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AAWithoutCommandRoom
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ] # CC gets bluespace
+
+- type: startingGear
+  id: HECUTeamLeadOperatorGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckMercenaryCaptain
+    gloves: ClothingHandsMercGlovesCombat
+    mask: ClothingMaskGasSecurity
+    head: ClothingHeadHatBeretMerc
+    shoes: ClothingShoesBootsMercFilled
+    back: ClothingBackpackCentcomm
+    outerClothing: ClothingOuterVestWebHECUTeamLeader
+    belt: ClothingBeltMercWebbing
+    ears: ClothingHeadsetAltFreelancer
+    id: HECUOperatorPDA
+    pocket1: DrinkEnergyDrinkCan
+    pocket2: WeaponDisabler
+  inhand:
+    - WeaponLaserCarbine
+  storage:
+    back:
+    - Vape # interns ammiright?
+    - BoxSurvivalSlotsMedical
+    - Stunbaton
+
+- type: startingGear
+  id: HECUMedicOperatorGear
+  equipment:
+    eyes: ClothingEyesGlassesMedSec
+    jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckMercenaryMedic
+    gloves: ClothingHandsMercGlovesCombat
+    mask: ClothingMaskBreathMedicalSecurity
+    head: ClothingHeadHatBeretMedic
+    shoes: ClothingShoesBootsMercFilled
+    back: ClothingBackpackCentcomm
+    outerClothing: ClothingOuterVestWebHECUMedic
+    belt: ClothingBeltMercWebbing
+    ears: ClothingHeadsetAltFreelancer
+    id: HECUOperatorPDA
+    pocket1: DrinkEnergyDrinkCan
+    pocket2: WeaponDisabler
+  inhand:
+    - WeaponLaserCarbine
+  storage:
+    back:
+    - Vape # interns ammiright?
+    - BoxSurvivalSlotsMedical
+    - Stunbaton
+
+- type: startingGear
+  id: HECUOperatorGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckMercenary
+    gloves: ClothingHandsMercGlovesCombat
+    mask: ClothingMaskGasMerc
+    head: ClothingHeadHelmetMerc
+    shoes: ClothingShoesBootsMercFilled
+    back: ClothingBackpackCentcomm
+    outerClothing: ClothingOuterVestWebHECUOperator
+    belt: ClothingBeltMercWebbing
+    ears: ClothingHeadsetAltFreelancer
+    id: HECUOperatorPDA
+    pocket1: DrinkEnergyDrinkCan
+    pocket2: WeaponDisabler
+  inhand:
+    - WeaponLaserCarbine
+  storage:
+    back:
+    - Vape # interns ammiright?
+    - BoxSurvivalSlotsMedical
+    - Stunbaton

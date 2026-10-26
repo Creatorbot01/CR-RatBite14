@@ -33,3 +33,60 @@
   - WeaponSubMachineSmart
   - MagazineSmart
   - MagazineSmart
+
+# Hecu weapon selector
+
+- type: selectableSet
+  id: WeaponSelectorHECUBallistic
+  name: selectable-set-hecu-ballistic-name
+  description: selectable-set-hecu-ballistic-desc
+  sprite:
+    sprite: _Goobstation/Objects/Weapons/Guns/SMGs/smartgun.rsi
+    state: icon
+  content:
+  - WeaponRifleLecter
+  - MagazineRifle
+  - MagazineRifle
+  - WeaponPistolMk58
+  - MagazinePistol
+  - MagazinePistol
+  - MagazineBoxRifleBig
+  - MagazineBoxPistol
+
+- type: selectableSet
+  id: WeaponSelectorHECUEnergy
+  name: selectable-set-hecu-energy-name
+  description: selectable-set-hecu-energy-desc
+  sprite:
+    sprite: _Goobstation/Objects/Weapons/Guns/SMGs/smartgun.rsi
+    state: icon
+  content:
+  - WeaponLaserCellSMG
+  - PowerCellOverchargedSMG
+  - PowerCellOverchargedSMG
+  - WeaponEnergyCellPistol
+  - EnergyMagPistolOverchargeLethal
+  - EnergyMagPistolOverchargeLethal
+  - PortableRecharger # make a compact variant future me.
+
+- type: selectableSet
+  id: WeaponSelectorHECURiot
+  name: selectable-set-hecu-riot-name
+  description: selectable-set-hecu-riot-desc
+  sprite:
+    sprite: _Goobstation/Objects/Weapons/Guns/SMGs/smartgun.rsi
+    state: icon
+  content:
+  - WeaponLauncherNonLethal
+  - WeaponShotgunSawn
+  - GrenadeBeanbagShotgun
+  - GrenadeBeanbagShotgun
+  - GrenadeBeanbagShotgun
+  - GrenadeFlash
+  - GrenadeFlash
+  - GrenadeFlash
+  - GrenadeTeargas
+  - GrenadeTeargas
+  - BoxLethalshot
+  - BoxBeanbag
+  - RiotShield

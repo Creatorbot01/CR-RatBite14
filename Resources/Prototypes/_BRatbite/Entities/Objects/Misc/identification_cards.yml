@@ -111,3 +111,55 @@
   - type: PresetIdCard
     job: TramDriver
 
+- type: entity
+  parent: PassengerIDCard
+  id: HECUOperatorIDCard
+  name: HECU Operator ID card
+  components:
+  - type: PresetIdCard
+    job: operatorT1
+  - type: Sprite
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+    layers:
+    - state: default
+    - state: idoperator
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+
+
+- type: entity
+  parent: PassengerIDCard
+  id: HECUMedicIDCard
+  name: HECU Medic ID card
+  components:
+  - type: PresetIdCard
+    job: MedicOperatorT1
+  - type: Sprite
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+    layers:
+    - state: default
+    - state: idmedicoperator
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+
+
+- type: entity
+  parent: PassengerIDCard
+  id: HECUTeamLeadIDCard
+  name: HECU Team Lead ID card
+  components:
+  - type: PresetIdCard
+    job: teamLeadT1
+  - type: Sprite
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+    layers:
+    - state: default
+    - state: idteamlead
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
