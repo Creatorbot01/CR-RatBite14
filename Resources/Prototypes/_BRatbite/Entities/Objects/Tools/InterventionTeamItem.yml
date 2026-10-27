@@ -1,0 +1,8 @@
+- type: entity
+  parent: PortableRecharger
+  id: CompactPortableRecharger
+  name: compact portable recharger
+  description: A smaller version of portable recharger for combat applications.
+  components:
+  - type: Item
+    size: Normal

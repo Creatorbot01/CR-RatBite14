@@ -38,4 +38,4 @@ selectable-set-hecu-riot-desc =
     Set of riot gear. for controlling the crowd.
     Include : GL-06 riot grenade launcher and sawn-off shotgun.
     with 3 40mm beanbag 40mm flash grenade, 2 gas tear grenade,
-    1 pellet and 1 beanbag shotgun shell box. with riot shield
+    1 pellet and 1 beanbag shotgun shell box. with telescopic shield

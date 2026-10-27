@@ -59,20 +59,19 @@
     mask: ClothingMaskGasSecurity
     head: ClothingHeadHatBeretMerc
     shoes: ClothingShoesBootsMercFilled
-    back: ClothingBackpackCentcomm
+    back: ClothingBackpackMerc
     outerClothing: ClothingOuterVestWebHECUTeamLeader
-    belt: ClothingBeltMercWebbing
+    belt: ClothingBeltMercWebbingFilledHECU
     ears: ClothingHeadsetAltFreelancer
     id: HECUOperatorPDA
     pocket1: DrinkEnergyDrinkCan
     pocket2: WeaponDisabler
   inhand:
-    - WeaponLaserCarbine
+    - HECUUndeterminedWeapon
   storage:
     back:
-    - Vape # interns ammiright?
-    - BoxSurvivalSlotsMedical
-    - Stunbaton
+    - CrowbarRed
+    - BoxSurvivalSlotsSecurity
 
 - type: startingGear
   id: HECUMedicOperatorGear
@@ -83,20 +82,23 @@
     mask: ClothingMaskBreathMedicalSecurity
     head: ClothingHeadHatBeretMedic
     shoes: ClothingShoesBootsMercFilled
-    back: ClothingBackpackCentcomm
+    back: ClothingBackpackMerc
     outerClothing: ClothingOuterVestWebHECUMedic
-    belt: ClothingBeltMercWebbing
+    belt: ClothingBeltMedicalEMTFilled
     ears: ClothingHeadsetAltFreelancer
     id: HECUOperatorPDA
-    pocket1: DrinkEnergyDrinkCan
-    pocket2: WeaponDisabler
-  inhand:
-    - WeaponLaserCarbine
+    pocket1: WeaponPistolMk58
+    pocket2: CentCommHypo
   storage:
     back:
-    - Vape # interns ammiright?
-    - BoxSurvivalSlotsMedical
-    - Stunbaton
+    - BoxSurvivalSlotsSecurity
+    - JugOxandrolone
+    - JugSalicylicAcid
+    - DefibrillatorCompact
+    - MedkitAdvancedFilled
+    - CrowbarRed
+    - MagazinePistol
+    - MagazinePistol
 
 - type: startingGear
   id: HECUOperatorGear
@@ -107,17 +109,16 @@
     mask: ClothingMaskGasMerc
     head: ClothingHeadHelmetMerc
     shoes: ClothingShoesBootsMercFilled
-    back: ClothingBackpackCentcomm
+    back: ClothingBackpackMerc
     outerClothing: ClothingOuterVestWebHECUOperator
-    belt: ClothingBeltMercWebbing
+    belt: ClothingBeltMercWebbingFilledHECU
     ears: ClothingHeadsetAltFreelancer
     id: HECUOperatorPDA
     pocket1: DrinkEnergyDrinkCan
     pocket2: WeaponDisabler
   inhand:
-    - WeaponLaserCarbine
+    - HECUUndeterminedWeapon
   storage:
     back:
-    - Vape # interns ammiright?
-    - BoxSurvivalSlotsMedical
-    - Stunbaton
+    - CrowbarRed
+    - BoxSurvivalSlotsSecurity

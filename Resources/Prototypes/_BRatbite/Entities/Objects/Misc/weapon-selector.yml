@@ -11,3 +11,19 @@
     possibleSets:
     - WeaponSelectorRSOSmartgun
     maxSelectedSets: 1
+
+- type: entity
+  id: HECUUndeterminedWeapon
+  name: HECU weapon pack
+  description: A small remote utilizing bluespace technology to drop in a loadout directly to you. Choose wisely.
+  parent: [ BaseItem, BaseSetSelector, BaseCentcommContraband ]
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Security/ertundetermined.rsi
+    state: icon
+  - type: SetSelector
+    possibleSets:
+    - WeaponSelectorHECUBallistic
+    - WeaponSelectorHECUEnergy
+    - WeaponSelectorHECURiot
+    maxSelectedSets: 1

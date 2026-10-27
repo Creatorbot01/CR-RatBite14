@@ -67,7 +67,7 @@
   - WeaponEnergyCellPistol
   - EnergyMagPistolOverchargeLethal
   - EnergyMagPistolOverchargeLethal
-  - PortableRecharger # make a compact variant future me.
+  - CompactPortableRecharger
 
 - type: selectableSet
   id: WeaponSelectorHECURiot
@@ -89,4 +89,4 @@
   - GrenadeTeargas
   - BoxLethalshot
   - BoxBeanbag
-  - RiotShield
+  - TelescopicShield

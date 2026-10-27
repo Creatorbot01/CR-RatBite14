@@ -1,9 +1,12 @@
 - type: entity
-  parent: ClothingBackpackMerc
-  id: ClothingBackpackMercFilledHECU
+  parent: ClothingBeltMercWebbing
+  id: ClothingBeltMercWebbingFilledHECU
   suffix: Filled, HECU Operator
   components:
   - type: StorageFill
     contents:
-      - id: Zipties
-      - id: MedkitAdvancedFilled
+      - id: Truncheon
+      - id: Handcuffs
+      - id: Handcuffs
+      - id: GrenadeFlashBang
+      - id: WeaponDisabler
