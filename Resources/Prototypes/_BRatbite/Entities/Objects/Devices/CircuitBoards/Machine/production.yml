@@ -1,0 +1,13 @@
+- type: entity
+  id: MedicalAssemblerCircuitboard
+  parent: [ BaseMachineCircuitboard, BaseMedicalContraband ]
+  name: medical assembler machine board
+  components:
+    - type: Sprite
+      state: medical
+    - type: MachineBoard
+      prototype: MedicalAssembler
+      stackRequirements:
+        Manipulator: 1
+        Glass: 2
+        Cable: 2

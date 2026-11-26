@@ -1,0 +1,375 @@
+#medipen result for medical assembler. use this one so that we can just balance the mass produceable variant.
+#why? to just make it medipen is easier to print since we want 1:1 chem from recipe to medipen.
+- type: entity
+  parent: BaseItem
+  id: EmptyMedipenItem
+  name: medipen shell
+  description: a shell of a medipen, can be filled with chemicals via medical assembler only. can only use authorized recipes that precoded into the assembler.
+  components:
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#439822"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#439822"
+      - state: base-colorB-inhand-right
+    size: Tiny
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    state: medipen
+
+- type: entity
+  parent: EmergencyMedipen
+  id: EmergencyMedipenProduceable
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15 # Goobstation
+        reagents:
+        - ReagentId: Epinephrine # Goobstation
+          Quantity: 5
+        - ReagentId: Atropine # Goobstation
+          Quantity: 5
+        - ReagentId: TranexamicAcid # Goobstation
+          Quantity: 5
+
+- type: entity
+  parent: AntiPoisonMedipen
+  id: AntiPoisonMedipenProduceable
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 20
+
+- type: entity
+  parent: BruteAutoInjector
+  id: BruteMedipenProduceable
+  name: Brute Medipen
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: SalicylicAcid # goobstation
+          Quantity: 10
+        - ReagentId: Bicaridine # goobstation
+          Quantity: 5
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+
+- type: entity
+  parent: BurnAutoInjector
+  id: BurnMedipenProduceable
+  name: Burn Medipen
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Oxandrolone # Goobstation
+          Quantity: 10
+        - ReagentId: Leporazine
+          Quantity: 10
+
+- type: entity
+  parent: RadAutoInjector
+  id: RadMedipenProduceable
+  name: Anti-Radiation Medipen
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Arithrazine
+          Quantity: 15
+        - ReagentId: Bicaridine
+          Quantity: 5
+
+- type: entity
+  parent: PunctAutoInjector
+  id: PunctMedipenProduceable
+  name: Puncturase Medipen
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Puncturase
+          Quantity: 10
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+
+- type: entity
+  parent: AirlossAutoInjector
+  id: AirlossMedipenProduceable
+  name: Airloss Medipen
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 40
+        reagents:
+        - ReagentId: Artiplates
+          Quantity: 20
+        - ReagentId: DexalinPlus
+          Quantity: 20
+
+- type: entity
+  parent: SpaceMedipen
+  id: SpaceMedipenProduceable
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+          - ReagentId: Leporazine
+            Quantity: 15
+          - ReagentId: Barozine
+            Quantity: 15
+
+- type: entity # since this one is made by medical changes the contraband to SecCommand one. plus you didnt even need antag for this one.
+  parent: [ChemicalMedipen, BaseSecurityCommandContraband]
+  id: CombatMedipenProduceable
+  suffix: Produceable
+  name: combat medipen
+  description: A single-dose, non-refillable medipen containing a chemical cocktail that treats most forms of damage.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#5bcaca"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#5bcaca"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: morphen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 35 # goobstation
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 30 # goobstation
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: WehMedipen
+  id: WehMedipenProduceable
+  suffix: Produceable
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 60
+        reagents:
+        - ReagentId: JuiceThatMakesYouWeh
+          Quantity: 60
+
+- type: entity
+  name: drug stimulant medipen
+  parent: [ChemicalMedipen, BaseSecurityCommandContraband]
+  id: MedStimpack
+  suffix: Produceable
+  description: Chemical stimulants, or better known as METH. You feel a urge to inject it into yourself.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ntstimpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Desoxyephedrine
+          Quantity: 15
+        - ReagentId: Dylovene
+          Quantity: 15
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ntstimpen_empty
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  parent: [ChemicalMedipen, BaseSyndicateContraband]
+  id: NoctMedipenProduceable
+  suffix: Produceable
+  name: nocturine medipen
+  description: A chemical injector containing a large dose of nocturine, useful for kidnapping.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#9a040e"
+      - state: base-colorB-inhand-left
+        color: "#c62933"
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#9a040e"
+      - state: base-colorB-inhand-right
+        color: "#c62933"
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: stimpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20 # Goobstation edit
+        reagents:
+        - ReagentId: Nocturine
+          Quantity: 20 # Goobstation edit
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: stimpen_empty
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: hemostasis medipen
+  parent: ChemicalMedipen
+  id: HemostasisMedipen
+  description: A rapid dose of coagulants and circulatory fluids. Contains tranexamic acid, saline, and artiplates.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: morphen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+        - ReagentId: Saline
+          Quantity: 10
+        - ReagentId: Artiplates
+          Quantity: 5
+
+- type: entity
+  name: lacerinol medipen
+  parent: ChemicalMedipen
+  id: LacerMedipen
+  description: A rapid dose of lacerinol and tranexamic acid, intended for combat applications.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: morphen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Lacerinol
+          Quantity: 10
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+
+- type: entity
+  name: bruizine medipen
+  parent: ChemicalMedipen
+  id: BruizMedipen
+  description: A rapid dose of bruizine and tranexamic acid, intended for combat applications.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: morphen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Bruizine
+          Quantity: 10
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+
+- type: entity
+  name: ethylredoxrazine medipen
+  parent: ChemicalMedipen
+  id: EthylredoxrazineMedipen
+  description: A rapid dose of ethanol neutralizers and anti-toxins for customers who have maybe had enough for the night. Contains ethylredoxrazine and dylovene.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: morphen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Ethylredoxrazine
+          Quantity: 15
+        - ReagentId: Dylovene
+          Quantity: 5

@@ -1,0 +1,207 @@
+- type: microwaveMealRecipe
+  id: RecipeEmergencyMedipenProduceable
+  name: emergency medipen recipe
+  result: EmergencyMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Epinephrine: 5
+    Atropine: 5
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeAntiPoisonMedipenProduceable
+  name: anti-poison medipen recipe
+  result: AntiPoisonMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Dylovene: 20
+
+- type: microwaveMealRecipe
+  id: RecipeBruteMedipenProduceable
+  name: brute medipen recipe
+  result: BruteMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    SalicylicAcid: 10
+    Bicaridine: 5
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurnMedipenProduceable
+  name: burn medipen recipe
+  result: BurnMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Oxandrolone: 10
+    Leporazine: 10
+
+- type: microwaveMealRecipe
+  id: RecipeRadMedipenProduceable
+  name: anti-radiation medipen recipe
+  result: RadMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Arithrazine: 15
+    Bicaridine: 5
+
+- type: microwaveMealRecipe
+  id: RecipePunctMedipenProduceable
+  name: puncturase medipen recipe
+  result: PunctMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Puncturase: 10
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeAirlossMedipenProduceable
+  name: airloss medipen recipe
+  result: AirlossMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Artiplates: 20
+    DexalinPlus: 20
+
+- type: microwaveMealRecipe
+  id: RecipeSpaceMedipenProduceable
+  name: space medipen recipe
+  result: SpaceMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Leporazine: 15
+    Barozine: 15
+
+- type: microwaveMealRecipe
+  id: RecipeCombatMedipenProduceable
+  name: combat medipen recipe
+  result: CombatMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Omnizine: 30
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeWehMedipenProduceable
+  name: weh medipen recipe
+  result: WehMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    JuiceThatMakesYouWeh: 60
+
+- type: microwaveMealRecipe
+  id: RecipeMedStimpack
+  name: drug stimulant medipen recipe
+  result: MedStimpack
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Desoxyephedrine: 15
+    Dylovene: 15
+
+- type: microwaveMealRecipe
+  id: RecipeNoctMedipenProduceable
+  name: nocturine medipen recipe
+  result: NoctMedipenProduceable
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Nocturine: 20
+
+- type: microwaveMealRecipe
+  id: RecipeHemostasisMedipen
+  name: hemostasis medipen recipe
+  result: HemostasisMedipen
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    TranexamicAcid: 5
+    Saline: 10
+    Artiplates: 5
+
+- type: microwaveMealRecipe
+  id: RecipeLacerMedipen
+  name: lacerinol medipen recipe
+  result: LacerMedipen
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Lacerinol: 10
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBruizMedipen
+  name: bruizine medipen recipe
+  result: BruizMedipen
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Bruizine: 10
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeEthylredoxrazineMedipen
+  name: ethylredoxrazine medipen recipe
+  result: EthylredoxrazineMedipen
+  secretRecipe: true
+  time: 5
+  group: MedicalAssembler
+  solids:
+    EmptyMedipenItem: 1
+  reagents:
+    Ethylredoxrazine: 15
+    Dylovene: 5

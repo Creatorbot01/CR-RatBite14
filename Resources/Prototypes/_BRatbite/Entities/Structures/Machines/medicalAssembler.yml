@@ -1,0 +1,63 @@
+#this is kinda weird but fuck it we ball, actually make it a joke that med assembler is just glorified microwave. -CR
+
+- type: entity
+  id: MedicalAssembler
+  parent: [ KitchenMicrowave, BaseMedicalContraband ]
+  name: Medical Assembler
+  description: Despite being state of the art medical assembling unit, it can also cook food pretty well...
+  components:
+  - type: Microwave
+    capacity: 10
+    canMicrowaveIdsSafely: false
+    explosionChance: 0.10 # Goobstation
+  - type: Sprite
+    sprite: Structures/Machines/microwave_syndie.rsi
+    drawdepth: SmallObjects
+    snapCardinals: true
+  - type: Machine
+    board: MedicalAssemblerCircuitboard
+  - type: Explosive # Goobstation
+    explosionType: Default
+    maxIntensity: 5
+    totalIntensity: 2
+    intensitySlope: 2
+    canCreateVacuum: false
+    deleteAfterExplosion: false
+  - type: FoodRecipeProvider
+    providedRecipes:
+    - RecipeEmergencyMedipenProduceable
+    - RecipeAntiPoisonMedipenProduceable
+    - RecipeBruteMedipenProduceable
+    - RecipeBurnMedipenProduceable
+    - RecipeRadMedipenProduceable
+    - RecipePunctMedipenProduceable
+    - RecipeAirlossMedipenProduceable
+    - RecipeSpaceMedipenProduceable
+    - RecipeCombatMedipenProduceable
+    - RecipeWehMedipenProduceable
+    - RecipeMedStimpack
+    - RecipeNoctMedipenProduceable
+    - RecipeHemostasisMedipen
+    - RecipeLacerMedipen
+    - RecipeBruizMedipen
+    - RecipeEthylredoxrazineMedipen
+  - type: Item
+    sprite: Structures/Machines/microwave_syndie.rsi
+    size: Ginormous
+  - type: MeleeWeapon
+    attackRate: 0.75
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10

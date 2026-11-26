@@ -1,0 +1,5 @@
+- type: guideEntry
+  id: MedicalAssemblerRecipes
+  name: guide-entry-medical-assembler-recipes
+  text: "/ServerInfo/_BRatbite/Guidebook/Medical/MedAssemblerRecipe.xml"
+  filterEnabled: True

@@ -52,4 +52,7 @@ Speaking of experimentation, there are a few more toy you can use when it comes 
     <GuideEntityEmbed Entity="ChemicalPayload"/>
     <GuideEntityEmbed Entity="TimerTrigger"/>
   </Box>
+
+You can also craft medipen using the medical assembler. [textlink="Click here to see a list of recipes." link="MedicalAssemblerRecipes"]
+
 </Document>

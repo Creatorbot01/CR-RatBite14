@@ -7,3 +7,5 @@ guide-entry-sop-multiround-brig-pardons = Pardons
 guide-entry-sop-central-command-general = Central Command
 
 guide-entry-sop-central-command-rso = Redsight Overseer
+
+guide-entry-medical-assembler-recipes = Medical Assembler Recipes
